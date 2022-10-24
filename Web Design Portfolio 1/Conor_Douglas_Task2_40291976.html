@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Conor Douglas CV</title>
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style media="screen">
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* element selectors */
+    body {
+      background-image: url(./img/bodyBg.jpg);
+      background-size: contain;
+      font: tahoma;
+      font-size: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2d2d2d;
+      font-size: 50px;
+      font-style: oblique;
+    }
+
+    h2 {
+      text-align: left;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-underline-position: under;
+      font-style: oblique;
+
+    }
+
+    hr {
+      color: #555;
+      background-color: #555;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 100px border-radius:4px;
+      display: inline-block;
+      margin: 5px;
+      width: 15%;
+      font-weight: bold;
+      font-size: 20px
+    }
+
+    /*ID Classes*/
+    #socialsLayout {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 4%;
+    }
+
+    #socialButton {
+      height: 64px;
+      width: 64px;
+      border: none;
+      filter: invert(0&);
+      -webkit-filter: invert(25%);
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+
+
+    /*classes*/
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      box-shadow: 0px 2px 10px 4px black;
+    }
+
+
+    .title {
+      text-align: center;
+      font-size: 70px;
+      font-family: 'Oleo Script', cursive;
+      color: white;
+      text-decoration: none;
+      font-weight: lighter;
+      font-stretch: extra-condensed;
+      font-size-adjust: auto;
+      margin-top: 190px;
+    }
+
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    .titleBorder {
+      background-color: #4a4948;
+      border-color: white;
+      border-width: thin;
+      border-radius: 5px;
+      box-sizing: content-box;
+    }
+
+
+    .point {
+      font-size: 25px;
+      text-align: center;
+      border: 2px;
+      border-style: dashed;
+      font-weight: bold;
+      border-radius: 3px;
+      padding: 5px;
+    }
+
+
+    .column {
+      float: left;
+      width: 50%;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    .rowImg {
+      float: left;
+      width: 40%;
+      height: 40%;
+      border-radius: 5px;
+      margin-left: 30%;
+      margin-right: 20%;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .steps {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .steps>p {
+      padding: 3%;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .stepImg {
+      float: none;
+      width: 40%;
+      height: 40%;
+
+      border-width: thin;
+      border-style: inset;
+      margin-right: 5%;
+    }
+
+
+    .content {
+      border-style: solid solid solid solid;
+      border-width: 0px;
+      padding: 5px;
+      margin-top: 20px;
+      box-shadow: 0px 1px 2px 2px #80726c;
+      background-color: #fffbf0;
+    }
+
+    .profShadow {
+      box-shadow: 0px 1px 2px 2px #80726c;
+    }
+
+
+    .border {
+      border-width: inherit;
+      height: 450px;
+      background-image: url(./img/bgTest.jpg);
+      background-height: auto 100%;
+      background-position: center;
+      background-repeat: repeat;
+      text-align: center;
+      color: #fffbf0;
+      font-family: sans-serif;
+      font-size: 12px;
+      padding: 10px;
+      padding-top: 40px;
+      box-shadow: 10px;
+    }
+
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: brown;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: lightgreen;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+
+    .review {}
+
+    .review>h3 {
+      padding-left: 5%;
+    }
+
+    .review>p {
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      font-family: sans-serif;
+      font-weight: bolder;
+
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+    }
+
+    .rating>img {
+      width: 100px;
+
+    }
+
+
+    @media only screen and (max-width: 600px) {
+      .column {
+        width: 100%
+      }
+
+      .point {
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        border: 2px;
+        border-style: dashed;
+        font-weight: bold;
+        border-radius: 3px;
+        padding: 5px;
+      }
+
+    }
+
+    /* Header Section */
+    .header {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding: 20px 10px;
+    }
+
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: lighter;
+      font-family: 'Oleo Script', cursive;
+    }
+
+
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: center;
+      }
+
+      .header-right {
+        float: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a class="logo">How to Coffee</a>
+    <div class="header-right">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#content">Contents</a>
+    </div>
+  </div>
+
+
+
+
+  <div class="profShadow">
+    <div class="border">
+      <div class="titleBorder">
+        <h2 class="title">
+          How To Coffee
+        </h2>
+      </div>
+
+    </div>
+  </div>
+
+  <div id=socialsLayout style="background-color:#fffbf0; border-style:inset; border-width:thick;">
+    <a href="https://twitter.com/?lang=en"><img id=socialButton src="icons/tw.png" alt="Twitter Social"></a>
+    <a href="https://facebook.com/?lang=en"><img id=socialButton src="icons/fb.png" alt="Facebook Social"></a>
+    <a href="https://instagram.com/?lang=en"><img id=socialButton src="icons/inst.png" alt="instagram Social"></a>
+  </div>
+  <p id=contact style="background-color:white; text-align:center; padding:10px; font-family:sans-serif; font-weight:bold;">Contact us on Our Social Media Links Above</p>
+  </div>
+
+  <div class="content">
+    <h2><a id="about"></a>About This Website</h2>
+    <p>Hello! In this website you will learn how to craft the perfect brew through many
+      different methods. Some methods are easier than others. Take for example, the French Press.
+      All you need is to put your coffee in and wait right?</p>
+    <div style="background-color:black; padding:10px;">
+      <h2 class="head" style="text-align: center;color:white;font-size:40px;">Wrong</h2>
+    </div>
+    <ul>
+      <li>How much coffee did you use?</li>
+      <li>How much water did you use?</li>
+      <li>Did you just use the kettle right after it finished boiling?</li>
+      <li>Why do these things matter?</li>
+    </ul>
+    <h2>Good Question!</h2>
+    <div style="text-align:center;">
+      <span class="point">Because Coffee Beans are Sensitive</span>
+    </div>
+    <p>
+      <b>No they don't have feelings</b>, they are very easily under or over-extracted
+      when brewing no matter which method used. leaving a <b>bitter/sour</b> taste in your coffee.
+    </p>
+    <p>The reason you're on this website is to truly craft the perfect brew with any method available. Factors i will
+      include for these methods are: </p>
+    <ul>
+      <li>The quality of brewed coffee</li>
+      <li>The cost for the method equipment</li>
+      <li>My personal opinion on each method</li>
+      <li>A recipe to follow for each method</li>
+      <li>An overall rating out of 5</li>
+    </ul>
+    <p>So with all that in mind let's start cheap and easy and work our way up.</p>
+  </div>
+  <img src="./img/filler1.jpg" alt="A Cappucino" class="center">
+
+  <div class="content">
+    <h1>Contents</h1>
+    <hr>
+    <h2>Methods</h2>
+    <div class=>
+      <ol>
+        <li><a href="#frenchpress">French Press</a></li>
+        <ol>
+          <li><a href="#sumFrench">Summary</a></li>
+          <li><a href="#recFrench">Recipe</a></li>
+          <li><a href="#revFrench">Review</a></li>
+        </ol>
+        <li><a href="#aeropress">Aeropress</a></li>
+        <ol>
+          <li><a href="#sumAero">Summary</a></li>
+          <li><a href="#recAero">Recipe</a></li>
+          <li><a href="#revAero">Review</a></li>
+        </ol>
+        <li><a href="#pourover">Pourover Brew</a></li>
+        <ol>
+          <li><a href="#sumPour">Summary</a></li>
+          <li><a href="#recPour">Recipe</a></li>
+          <li><a href="#revPour">Review</a></li>
+        </ol>
+      </ol>
+    </div>
+    <hr>
+
+    <div id=frenchpress>
+      <h1 style="text-align-center;">The Classic: French Press</h1>
+      <div class="row">
+        <div class='column' style="text-align:center">
+          <h2 style="text-align:center" id=sumFrench>Summary</h2>
+
+          <h3 style="font-family:sans-serif;">
+            A cylindrical pot with a plunger and built-in filter screen that presses
+            hot water through ground coffee: that’s the simple beauty of the French
+            press, method of choice for many all over the world, creating an earthy,
+            rich taste in your daily cup of coffee.
+          </h3>
+        </div>
+        <div class="column">
+          <img class="rowImg" src="./img/french-press-espresso.jpg" alt="">
+        </div>
+      </div>
+
+      <p></p>
+
+      <h2 style="text-align:center;font-size:30px;" id=recFrench>The Recipe</h2>
+
+      <div class="steps">
+        <hr>
+        <h3>Step 1: GRIND THE COFFEE</h3>
+        <img class="stepImg" src="./img/frenchGrind.jpg" alt="">
+        <p>You need coarsely fine grounds fresh coffee beans.
+          You'll need 2 tablespoons (1 oz or 28.3 grams) of
+          beans for every 1 cup of water.</p>
+        <hr>
+        <h3>Step 2: BOIL WATER</h3>
+        <img class="stepImg" src="./img/frenchKettle.jpg" alt="">
+        <p>Heat up one cup of water to 185-205 degrees F or 96 degrees C,
+          or just really hot. Make sure the water actually boils.</p>
+        <hr>
+        <h3>Step 3: ADD THE COFFEE GROUNDS AND HOT WATER</h3>
+        <img class="stepImg" src="./img/frenchPress.jpg" alt="">
+        <p>
+          Add the coffee grounds into the press.
+          Pour about half the water into your French press,
+          and allow the coffee to bloom for one minute.
+        </p>
+        <hr>
+        <h3>Step 4: PRESS THE PLUNGER</h3>
+        <img class="stepImg" src="./img/frenchPlunge.jpg" alt="">
+        <p> 1. Fill the press with the remaining water and stir.</p>
+        <p> 2. Wait 3 minutes for steep coffee. If you want a strong brew, you can let it steep a little longer.</p>
+        <p> 3. Do not press the plunger as the coffee grounds are steeping. After 3-4 minutes have elapsed, you’re ready for the final stage of espresso-making with the French press.</p>
+        <p> 4. Press down the plunger on your French press with slow, steady, and even pressure. Plunge halfway, and then raise the plunger to the top before plunging all the way down to finish the press</p>
+        <p> 5. Pour out the coffee into a cup and serve immediately.</p>
+      </div>
+
+      <hr>
+
+      <h2 style="text-align:center;font-size:30px;" id=recFrench>The Review</h2>
+      <div class="review">
+        <h3>The quality of brewed coffee</h3>
+
+        <p>So the quality of the coffee brewed from a french press my vary and is not
+          amazingly consistent but the ease of use and hands-off approach makes it very
+          useful in making everyday coffee. This brewing method would never produce
+          a coffee on the level of other more advanced/ hands-on methods (which will be discussed later on)</p>
+        <h3>The average cost for a French Press</h3>
+        <p>The cost for a french press is the reason why its first on this list.
+          It is the cheapest method for brewing which i am reviewing here.
+          good for making great coffee on a budget.<br><br>
+          Average Cost: £10 - £30 depending on the quality</p>
+        <h3>My personal opinion on the French Press</h3>
+        <p>
+          The French Press is a staple in coffee making, personally i dont use it
+          often but it is a great method especially for those looking for a strong
+          cup of coffee with little effort required. Also most french presses
+          can make a good amount of coffee (2-5 cups depending on size) which makes
+          it great for making coffee for Groups
+        </p>
+        <h3>An overall rating out of 5</h3>
+        <div class="rating">
+          <img src="./img/star.png" alt="">
+          <img src="./img/star.png" alt="">
+          <img src="./img/star.png" alt="">
+          <img src="./img/star.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div id=aeropress>
+      <h1 style="text-align-center;">The Modern: Aeropress</h1>
+      <div class="row">
+        <div class='column' style="text-align:center">
+          <h2 style="text-align:center" id=sumAero>Summary</h2>
+
+          <h3 style="font-family:sans-serif;">
+            A cylindrical pot with a plunger and built-in filter screen that presses
+            hot water through ground coffee: that’s the simple beauty of the French
+            press, method of choice for many all over the world, creating an earthy,
+            rich taste in your daily cup of coffee.
+          </h3>
+        </div>
+        <div class="column">
+          <img class="rowImg" src="./img/aeropress.jpg" alt="">
+        </div>
+      </div>
+
+
+      <hr>
+      <h2 style="text-align:center;font-size:30px;" id=recAero>The Recipe</h2>
+
+      <div class="steps">
+        <h3>Step 1: BOIL THE KETTLE</h3>
+        <img class="stepImg" src="./img/AeroStep1.jpg" alt="">
+        <p>Heat the water. Bring your water to a boil then let it cool for
+          about 1 minute. (You're aiming for something in between 175°F and 195°F.)</p>
+        <hr>
+        <h3>Step 2: GRIND THE BEANS</h3>
+        <img class="stepImg" src="./img/AeroStep2.jpg" alt="">
+        <p>Measure out 2 full AeroPress scoops of coffee beans (about 1/4 cup) and grind until fine.</p>
+        <hr>
+        <h3>Step 3: WET THE FILTER</h3>
+        <img class="stepImg" src="./img/AeroStep3.jpg" alt="">
+        <p>
+          Assemble the AeroPress with a paper filter inside the cap and
+          place on top of a mug or cup. Drizzle a little warm water in to
+          wet the filter.
+        </p>
+        <hr>
+        <h3>Step 4: ADD THE BEANS</h3>
+        <img class="stepImg" src="./img/AeroStep4.jpg" alt="">
+        <p>
+          Add the coffee grounds into the Aeropress.
+        </p>
+        <hr>
+        <h3>Step 5: HOT WATER</h3>
+        <img class="stepImg" src="./img/AeroStep5.jpg" alt="">
+        <p>
+          Pour in coffee until it comes up to the top
+          line on the AeroPress.
+        </p>
+        <hr>
+        <h3>Step 6: PRESS</h3>
+        <img class="stepImg" src="./img/AeroStep6.jpg" alt="">
+        <p>
+          Firmly press down the plunger until you hear a long hiss.
+        </p>
+        <hr>
+        <h3>Step 7: ENJOY</h3>
+        <img class="stepImg" src="./img/AeroStep7.jpg" alt="">
+        <p>
+          The coffee in this stage is very strong (similar to an espresso).
+          The choice is yours the coffee can be diluted to make it more to
+          make it an actual mug of coffee
+        </p>
+      </div>
+      <hr>
+
+      <h2 style="text-align:center;font-size:30px;" id=recAero>The Review</h2>
+      <div class="review">
+
+        <h3>The quality of brewed coffee</h3>
+
+        <p>
+          So the quality of the coffee brewed from the AeroPress is far stronger
+          than that of a French Press or that of the Pourover Brew Method which will
+          be discussed next. The reason for this is that the aeropress utilises compression
+          to mimic how espresso is made.
+        </p>
+        <h3>The average cost for a Aeropress</h3>
+        <p>The cost of an Aeropress is a step up from the French Press by £10.<br><br>
+          Average Cost: £30- £40 depending on the quality</p>
+        <h3>My personal opinion on the Aeropress</h3>
+        <p>
+          The Aeropress is modern method in coffee brewing. I personally enjoy brewing with this method
+          however there is a level of skill to it to truly get the perfect brew from it. i also find
+          this method quite interesting and truly a unique take on coffee making since
+          the use of compression in order to extract the most of out of the beans is truly impressive.
+        </p>
+        <h3>An overall rating out of 5</h3>
+        <div class="rating">
+          <img src="./img/star.png" alt="">
+          <img src="./img/star.png" alt="">
+          <img src="./img/star.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id=pourover>
+      <h1 style="text-align-center;">The Skillfull: Pourover Brew</h1>
+      <div class="row">
+        <div class='column' style="text-align:center">
+          <h2 style="text-align:center" id=sumAero>Summary</h2>
+
+          <h3 style="font-family:sans-serif;">
+            The pourover brew utilises a steady flow of water throw a bed of
+            coffee in a filter to extract the most coffee from the beans. This filter
+            is placed within a coffee dripper in order to funnel the water through
+            the coffee grounds evenly. Unlike previous methods on this list,
+            there are different types of equipment that can be used for this method.
+            These are the coffee drippers which their use depends on how fast or
+            how much coffee you are planning to make.
+            <br>
+            <p style="text-align:left;">
+              These coffee drippers are:
+            <ul style="text-align:left;">
+              <li>A Chemex (Larger Brews)</li>
+              <li>A Hario V60 (Smaller and more controlled brews)</li>
+            </ul>
+
+            </p>
+          </h3>
+        </div>
+        <div class="column">
+          <img class="rowImg" src="./img/pourover.jpg" style="height:50%; padding-bottom:20px;" alt="">
+        </div>
+      </div>
+      <img class="center" src="./img/how-to-v60-1.jpg" alt="" style="box-shadow:none;">
+      <p></p>
+      <hr>
+      <h2 style="text-align:center;font-size:30px;" id=recAero>The Recipe</h2>
+
+      <div class="steps">
+        <h3>Step 1: BOIL THE KETTLE</h3>
+        <img class="stepImg" src="./img/pour1.jpg" alt="">
+        <p>Heat the water. Bring your water to around 190 - 200°F preferrably use a
+          gooseneck kettle</p>
+        <hr>
+        <h3>Step 2: GRIND THE BEANS</h3>
+        <img class="stepImg" src="./img/pour2.jpg" alt="">
+        <p> Grind coffee to a coarseness resembling sea salt.
+          For blends, I personally recommend using 30 grams of coffee.</p>
+        <hr>
+        <h3>Step 3: PLACE AND WET THE FILTER</h3>
+        <img class="stepImg" src="./img/pour3.jpg" alt="">
+        <p>
+          Fold the crease of the filter paper and place in the coffee dripper.
+          Add boiling water to wet the filter paper and to get rid of any chemicals
+          that would still be in the paper. This also heats up the body of the
+          coffee dripper creating a more persistant thermal mass.
+        </p>
+        <hr>
+        <h3>Step 4: ADD THE BEANS</h3>
+        <img class="stepImg" src="./img/pour4.jpg" alt="">
+        <p>
+          Add the ground coffee to the filter and gently tap it to level the surface of the grounds.
+          Place the brewer on a carafe or cup, place this entire set-up onto a digital scale, and set it to zero. </p>
+        <hr>
+        <h3>Step 5: BLOOM PHASE</h3>
+        <img class="stepImg" src="./img/pour5.jpg" alt="">
+        <p>
+          There will be four pours total for this coffee preparation.
+          This is the first, and the most magical, because it is when you will see the coffee “bloom.”
+          As hot water first hits the grounds, Co2 is released creating a blossoming effect.
+
+          Start a timer. Begin pouring water slowly over the coffee,
+          starting at the outer rim and moving in a steady spiral toward the center of the grounds.
+          Stop pouring when the scale reaches 60 grams. Make sure all the grounds are saturated,
+          even if you need to add a little water. The pour should take about 15 seconds.
+          Give the coffee an additional 30 seconds to drip before moving on to the second pour.
+        </p>
+        <hr>
+        <h3>Step 6: POUR N0.1</h3>
+        <img class="stepImg" src="./img/pour6.jpg" alt="">
+        <p>
+          Starting in the center of the grounds, pour in a steady spiral toward the outer edge
+          and then back toward the center. Be sure to pour all the way out to the edge over the ripples
+          in the filter. This helps to keep grounds from being trapped in there and removed from the
+          rest of the extraction. Add roughly 90 grams, bringing the total to 150 grams.
+          The goal during this pour is to sink all of the grounds on the surface of the bed.
+          This creates a gentle turbulence that “stirs” the coffee, allowing water to more evenly extract the grounds.
+          Allow 45–65 seconds to elapse.
+        </p>
+        <hr>
+        <h3>Step 7: POUR N0.2</h3>
+        <img class="stepImg" src="./img/pour7.jpg" alt="">
+        <p>
+          As the mixture of water and coffee from the second pour drops to the
+          bottom of the filter, coming close to the level of the grounds,
+          pour an additional 100 grams of water using the same pattern as the second pour.
+          This brings the total up to 250 grams and should take 15–20 seconds.
+        </p>
+        <hr>
+        <h3>Step 8: POUR N0.3</h3>
+        <img class="stepImg" src="./img/pour8.jpg" alt="">
+        <p>
+          When the water and coffee from the third pour drops to the bottom of the filter,
+          complete your fourth and final pour. Add 100 grams,
+          bringing the total up to 350 grams of water. This pour should take 20 seconds.
+        </p>
+
+      </div>
+      <hr>
+
+      <h2 style="text-align:center;font-size:30px;" id=recAero>The Review</h2>
+      <div class="review">
+
+        <h3>The quality of brewed coffee</h3>
+
+        <p>
+          You will never find a coffee quite like one done with a pourover. Good
+          Technique and practice can yield amazing results and can truly give the
+          flavours that the coffee says on the packet. If you are looking for best
+          cup of coffee possible, this is the one.
+        </p>
+        <h3>The average cost for a Pourover Set</h3>
+        <p>For the level of coffee you can make, a pourover set can be quite cheap
+          since materials used varies from plastic to metal to ceramic. <br><br>
+          Average Cost : £30 - £80
+        </p>
+        <h3>My personal opinion on the French Press</h3>
+        <p>
+          The pourover technique is my favourite by far. The process of brewing
+          with this method produces good results and rewards skill and patience
+          which in turn makes it a rewarding experience in general. I own and frequently
+          use a ceramic Hario V60 and in terms of coffee making, was most definitely
+          worth the investment. The Pourover might not be for some who want quick
+          and easy coffee and this is why it is last on the list. This method is
+          for anyone who appreciates a good coffee and wants barista grade brew
+          in the comfort of their own home for a far cheaper price if they are
+          willing to put in the effort to learn the PourOver technique.
+        </p>
+        <h3>An overall rating out of 5</h3>
+        <div class="rating">
+          <img src="./img/star.png" alt="">
+          <img src="./img/star.png" alt="">
+          <img src="./img/star.png" alt="">
+          <img src="./img/star.png" alt="">
+          <img src="./img/star.png" alt="">
+        </div>
+      </div>
+    </div>
+    <footer style="background-color:white;text-align:center;">Author: Conor Douglas<br><a href="#">
+      <b>Top of Page</b>
+    </a></footer>
+</body>
+
+</html>

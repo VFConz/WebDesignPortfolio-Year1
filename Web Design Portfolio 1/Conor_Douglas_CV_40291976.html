@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--
+     as the portfolio instructions stated there is NO CSS in this document
+     I have had to rely on the outdated tag <center> over using inline css styling
+     to center my top section content and have tried to be as detailed as possible
+     when it comes to the design. However without css there is no complex background
+     styling or font design.
+-->
+
+
+
+
+<head>
+  <!-- defining the character set for the webpage -->
+  <meta charset="utf-8">
+
+  <title> Conor Douglas CV</title>
+</head>
+
+<!-- using bgcolor attribute in order to color the webpage without css styling -->
+
+<body bgcolor='#fffbf0'>
+  <!-- a div element to box together the top section of my CV -->
+  <div>
+    <!-- center tag to center the image, image is scaled to 300px it scales uniformly
+         so no need for the height attribute.-->
+    <center><img src="me.jpg" alt="Conor Douglas" width="300"></center>
+
+    <!-- <h1> tag to put emphasis on my name -->
+    <h1>
+      <!-- <center> tag to align the header tag under my picture -->
+      <center>Conor Douglas</center>
+    </h1>
+
+    <!-- <h2> tag to state display my professional background but not to outsize my name or the image of me -->
+    <h2>
+      <!-- center tag to keep all the top section symmetrical and responsive -->
+      <center>Front-End Web Developer, Programmer</center>
+    </h2>
+
+    <!-- container for my two buttons below. -->
+    <div>
+      <center>
+        <!-- this line creates a button element which has an attribute that has an anchored href (<a>)
+             that references the name of the html document and a download attribute which provides
+             a default name and file type
+        -->
+        <a href="CSC1030_Portfolio1_40291976.html" download="ConorDouglas_CV.html"><button>Download CV</button></a>
+
+        <!-- empty <p> block to create padding -->
+        <p></p>
+
+        <!-- button that directs user to linkedin -->
+        <form action="https://linkedin.com">
+          <input type="submit" value="Hire Me" />
+        </form>
+      </center>
+
+      <!-- div container for image set -->
+      <div>
+        <center>
+          <p></p>
+          <!-- The social media icons have anchored hyperlink references to their respective websites -->
+          <a href="https://twitter.com/?lang=en"><img src="icons/tw.png" alt="Twitter Social"></a>
+          <a href="https://facebook.com/?lang=en"><img src="icons/fb.png" alt="Facebook Social"></a>
+          <a href="https://instagram.com/?lang=en"><img src="icons/inst.png" alt="instagram Social"></a>
+        </center>
+      </div>
+    </div>
+
+    <!-- div container for contact details -->
+    <div>
+      <!-- line break for padding between icons and contact details -->
+      <br>
+      <!-- bold tags to emphahsise the category of details and improve readability-->
+      <b>Date of Birth: </b><em>04.09.01</em><br>
+      <!-- <br> tag used to seperate contact details. -->
+      <b>Email: </b>cdouglas27@qub.ac.uk <br>
+      <b>Phone No: </b>07593859632 <br><br>
+
+      <b>Address:</b><br>
+      <!-- utilizing the address element for an address. -->
+      <address>
+        89 Wellesley Avenue: Flat 3,<br>
+        Belfast,<br>
+        Co. Antrim, BT9 6DH
+      </address>
+    </div>
+  </div>
+
+  <h2>
+    Education
+  </h2>
+  <p>
+    I am currently enrolled in the <b>Computer Science BsC Degree</b> at
+    <!-- utilized the <abbr> element used to abbreviate the Full Title of QUB
+         and promote the reader to engage with the website.
+    -->
+    <abbr title="Queens University Belfast">
+      QUB
+    </abbr>.
+  </p>
+
+  <h3>GCSE Qualifications</h3>
+
+  <!-- table with a slightly darker header. The table uses 3 colums in order to
+       create padding/margins without the need of CSS styling -->
+  <table>
+    <tr bgcolor="#ede9dd">
+      <th>Subject</th>
+
+      <!-- padding is 7 non breakable spaces.-->
+      <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+
+
+      <!--
+           The Grade Header and it's column contents are all centered
+           for aesthetic reasons
+      -->
+
+      <th>
+        <center>Grade</center>
+      </th>
+    </tr>
+    <tr>
+      <td>English Language</td>
+      <td></td>
+      <td><b>
+          <center>B</center>
+        </b></td>
+    </tr>
+    <tr>
+      <td>Spanish</td>
+      <td></td>
+      <td><b>
+          <center>B</center>
+        </b></td>
+    </tr>
+    <tr>
+      <td>Technology & Design</td>
+      <td></td>
+      <td><b>
+          <center>B</center>
+        </b></td>
+    </tr>
+    <tr>
+      <td>English Literature</td>
+      <td></td>
+      <td><b>
+          <center>C</center>
+        </b></td>
+    </tr>
+    </tr>
+    <tr>
+      <td>Geography</td>
+      <td></td>
+      <td><b>
+          <center>C</center>
+        </b></td>
+    </tr>
+    <tr>
+      <td>LLW</td>
+      <td></td>
+      <td><b>
+          <center>C</center>
+        </b></td>
+    </tr>
+    <tr>
+      <td>Mathematics</td>
+      <td></td>
+      <td><b>
+          <center>C</center>
+        </b></td>
+    </tr>
+    <tr>
+      <td>Physics</td>
+      <td></td>
+      <td><b>
+          <center>C</center>
+        </b></td>
+    </tr>
+    <tr>
+      <td>Religious Studies</td>
+      <td></td>
+      <td><b>
+          <center>C</center>
+        </b></td>
+  </table>
+
+
+
+  <h3>
+    A Level Qualifications
+  </h3>
+  <p>
+    <!-- unordered list since a table would be unnescessary for 3 lines of content -->
+  <ul>
+    <li>Technology: <b>B</b></li>
+    <li>Digital Technology <b>B</b></li>
+    <li>Professional Business Studies <b>C</b></li>
+  </ul>
+  </p>
+  <h2>
+    Work Experience
+  </h2>
+  <h3>
+    <!--
+        unable to use unordered lists without bulletpoints since the
+        method involves using CSS
+
+        Workaround is to use <ul> tag to indent content then seperate using <br> tag.
+    -->
+    <ul>
+      Employer: <em>Brunel's Restaurant, Newcastle</em><br>
+      Dates: April 2019 - July 19<br>
+      Job Title: Kitchen Porter<br>
+    </ul>
+  </h3>
+
+  <p>
+    <b>Duties include:</b>
+  </p>
+  <ol>
+    <li>Cleaning</li>
+    <li>Kitchen Duties</li>
+    <li>Front of House Duties</li>
+  </ol>
+  <p>
+    And <em>any</em> other Duties required during the running of a busy restaurant
+  </p>
+
+  <h3>
+    <ul>
+      Employer: <em>Newry Mourne and Down District Council</em><br>
+      Dates: 1<sup>st</sup> July 2019 - 30<sup>th</sup> August 2019<br>
+      Job Title: Seasonal Leisure Attendant<br>
+    </ul>
+  </h3>
+
+  <div>
+    Although this was a 25 hours a week seasonal post I
+    really enjoyed all aspects of the post.
+  </div>
+
+  <p>
+    <b>Duties primarily involve:</b>
+  </p>
+
+  <ul>
+    <li>Cash Handling Duties</li>
+    <li>Dealing with the public</li>
+    <li>Supervising Children</li>
+    <li>Organising equipment for activities and ensuring it was fit for purpose</li>
+    <li>Cleaning</li>
+    <li>Setting up and taking down of rooms as required</li>
+  </ul>
+
+  <p>
+    In this post my main role was on outdoor activities such as the swans,
+    Go karts and tennis courts in Newcastle. This involved the organisation
+    of any equipment required to be set up in the morning to ensure everything
+    was ready for the public. I was also required to take any money for the
+    activities and ensure all income balanced at the end of the day.
+    Supervision of children was also very important especially around water-based
+    activities and the Go karts.
+    When not required to work on the outdoor activities I was posted at the
+    Newcastle Centre where I was required to assist with the cleaning of the
+    building and setting up any rooms to be used for groups etc coming in.
+  </p>
+
+
+
+  <h3>Summer School Assistant</h3>
+  <div>
+    I have volunteered in Down Arts Centre each summer for the past 3 years, from start of July to the end of August.
+  </div>
+  <p>
+    This role mostly included the
+    <!-- use of <strong> inline element to bring focus and emphasis to the roles of the job. -->
+    <strong>
+      preparation,
+      delivery of arts & crafts workshops and clearing up after they had finished.
+    </strong>
+    I was also required to assist in the supervision of the children during their time in the
+    room and ensure their safety was catered for.
+  </p>
+
+  <h3>
+    <ul>
+      <li>Employer: <em>Omniplex Cinemas Downpatrick</em></li>
+      <li>Dates: 1<sup>st</sup> September 2019 - 30<sup>th</sup> August 2020</li>
+      <li>Job Title: General Staff</li>
+    </ul>
+  </h3>
+
+  <p>
+    <b>Duties primarily involve:</b>
+  </p>
+
+  <ul>
+    <li>Cash Handling Duties</li>
+    <li>Dealing with the public</li>
+    <li>Cleaning</li>
+  </ul>
+  <p>
+    This was a casual position during my A Level study.
+    This post covered all areas including greeting customers,
+    working on the confectionery area, cleaning the cinema screens before
+    and after use and generally dealing with the public.
+  </p>
+  </div>
+  <!-- Footer element with a hyperlink to redirect user to top of webpage. -->
+  <footer><center><a href="#">Back To Top</a></center></footer>
+
+</body>
+
+
+</html>
